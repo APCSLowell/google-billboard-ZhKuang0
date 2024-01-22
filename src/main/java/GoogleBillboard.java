@@ -6,10 +6,26 @@ public class GoogleBillboard {
 		System.out.println("Replace this string with your answer!");
 	}
 	
+public void setup()  
+{            
 
+   for (int i=0; i<e.length()-10; i++)
+   {
+     String num= e.substring(i,i+10);
+     double dNum= Double.parseDouble(num);
+     
+    if (isPrime(dNum)== true){
+    System.out.println(num);
+    break;
+    }
+   }
 	//Finish this function
 	public boolean isPrime(double d){
+	if (dNum < 2) return false;
+	for (int i=2; i<=Math.sqrt(dNum); i++)
+	if (dNum % i==0)
+  	return false;
+	return true; 
 	}
-
 }
 
